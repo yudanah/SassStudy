@@ -1,0 +1,61 @@
+div {
+  color: #ff0000; }
+  div span {
+    color: #ff0000; }
+  div.div {
+    color: #ff0000; }
+  divspan div a {
+    color: #ff0000; }
+
+h1 {
+  color: #0000ff; }
+
+/*
+.box{
+	@include boxStyle;
+	background-color: $green;
+}
+
+.box2{
+	background-color: $puple;
+	font-weight: bold;
+	@include boxStyle;
+}
+
+.box3{
+	@include boxStyle;
+}
+
+.box4{
+	@include boxStyle2($green, 20px, 123px)
+}*/
+.box1 {
+  width: 150px;
+  padding: 20px 20px 15px 20px;
+  heidht: 100px;
+  z-index: 100;
+  background-color: #ff0000;
+  color: #6bc2ae; }
+
+.box2 {
+  width: 150px;
+  padding: 20px 20px 15px 20px;
+  heidht: 100px;
+  z-index: 100;
+  background-color: #00ff00; }
+
+.box3 {
+  width: 150px;
+  padding: 20px 20px 15px 20px;
+  heidht: 100px;
+  z-index: 100;
+  background-color: #0000ff; }
+
+.box4 {
+  width: 10px;
+  padding: 20px 20px 15px 20px;
+  heidht: 20px;
+  z-index: 100;
+  background-color: #fff; }
+
+/*# sourceMappingURL=test.css.map */

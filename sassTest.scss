@@ -1,0 +1,78 @@
+$blue : #0000ff;
+$red : #ff0000;
+$green : #00ff00;
+$puple : #eaea;
+
+div{
+	color: $red;
+	& span{ 
+		color: $red;
+	}
+	&.div{ // div .div
+		color: $red;
+	}
+	&span & a{ // div > span > a
+		color: $red;
+	}
+}
+
+h1{
+	color: $blue;
+}
+
+@mixin boxStyle{
+	border: 1px $red #000;
+	padding: 10px 9px 10px 8px;
+	color : $blue;
+}
+
+@mixin boxStyle2($color, $size, $padding){
+	background-color: $color;
+	font-size : $size;
+	padding: $padding;
+	border : $size solid $color;
+}
+/*
+.box{
+	@include boxStyle;
+	background-color: $green;
+}
+
+.box2{
+	background-color: $puple;
+	font-weight: bold;
+	@include boxStyle;
+}
+
+.box3{
+	@include boxStyle;
+}
+
+.box4{
+	@include boxStyle2($green, 20px, 123px)
+}*/
+
+$w100 : 100px;
+$w150 : 150px;
+
+@mixin lalala($width: 10px, $height: 20px, $bgcolor: #fff){
+	width: $width;
+	padding: 20px 20px 15px 20px;
+	heidht: $height;
+	z-index: 100;
+	background-color: $bgcolor;
+}
+
+.box1 {
+	@include lalala($w150, $w100, $red);
+	color: #6bc2ae;
+}
+.box2 {
+	@include lalala($w150, $w100, $green);
+}
+.box3 {
+	@include lalala($w150, $w100, $blue);
+}
+.box4 {
+	@include lalala();
+}
